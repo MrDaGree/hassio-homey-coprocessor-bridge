@@ -1,0 +1,22 @@
+name: "Homey Coprocessor Bridge"
+description: |
+  Homey Pro Coprocessor Bridge to MQTT
+slug: homey_copro
+version: "0.1.3"
+arch: [aarch64]
+
+hassio_api: true
+hassio_role: default
+services:
+  - mqtt:need
+
+gpio: true
+devices:
+  - /dev/ttyAMA2
+  - /dev/ttyAMA3
+
+options:
+  model: homey5q
+
+schema:
+  model: list(homey5q|homey6q)
