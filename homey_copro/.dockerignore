@@ -1,0 +1,6 @@
+*
+!Dockerfile
+!run.sh
+!mqtt_bridge.mjs
+!homey-pro-rootfs.tar
+!images/
